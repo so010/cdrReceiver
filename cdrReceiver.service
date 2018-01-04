@@ -1,0 +1,15 @@
+[Unit]
+Description=cdrReceiver receives cdr from Cisco Meeting Server and stores this to a mysql database
+After=network.target
+
+[Service]
+ExecStart=/usr/local/src/cdrReceiver/cdrReceiver.js
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/usr/local/src/cdrReceiver
+
+[Install]
+WantedBy=multi-user.target

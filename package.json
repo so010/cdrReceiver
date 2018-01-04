@@ -1,0 +1,19 @@
+{
+  "name": "cdrreceiver",
+  "version": "0.0.3",
+  "description": "Receives cdr from Cisco Meeting Server and stores to mysql db",
+  "main": "cdrReceiver.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "body-parser-xml": "^1.1.0",
+    "express": "^4.15.2",
+    "mysql": "github:mysqljs/mysql"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cdrReceiver.js"
+  },
+  "author": "Stefan Otto",
+  "license": "GPLv3"
+}
