@@ -18,6 +18,7 @@ nodejs application that receives cdr data from Cisco Meeting Server and stores t
 - Copy cdrReceiver.service file to /etc/systemd/system and reload systemd: `systemctl daemon-reload`
 - edit config.default.js (cdr Listening Port and  mysql access) and save as config.js
 - Start the service: `systemctl start cdrReceiver`
+- If cdrReceiver should start at boot: `systemctl enable cdrReceiver`
 
 
   
