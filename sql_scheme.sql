@@ -61,6 +61,7 @@ CREATE TABLE `callLegs` (
   `id` varchar(48) NOT NULL,
   `start` datetime DEFAULT NULL,
   `end` datetime DEFAULT NULL,
+  `ivr` varchar(255) DEFAULT NULL,
   `remoteParty` varchar(255) DEFAULT NULL,
   `displayName` varchar(255) DEFAULT NULL,
   `type` enum('acano','sip') DEFAULT NULL,
